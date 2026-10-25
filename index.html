@@ -237,16 +237,24 @@ footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
   .feat p { grid-column: 2; }
   .urb-head { margin-bottom: 24px; }
 }
-
-/* V 1.3: mapa y cómo llegar */
-.ubi .wrap > .mapa { grid-column: 1 / -1; }
-.mapbox { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.22); background: #0d2563; aspect-ratio: 16 / 7; min-height: 320px; }
-.mapbox iframe { width: 100%; height: 100%; border: 0; display: block; }
-.mapa small { display: block; margin-top: 10px; color: #c9d5f2; font-size: 0.85rem; }
-.como { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-.como .btn { min-height: 48px; }
-.ubi .txt .hint { font-size: 0.92rem; color: #c9d5f2; }
-@media (max-width: 820px) { .mapbox { aspect-ratio: 4 / 5; min-height: 340px; } .como .btn { flex: 1 1 100%; } }
+/* V 1.3: portada a pantalla completa en celular */
+@media (max-width: 600px) {
+  .hero { display: flex; flex-direction: column; min-height: calc(100vh - 61px); min-height: calc(100svh - 61px); padding-top: 0; }
+  .hero > .wrap { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; padding-top: 2svh; }
+  .hero .logo { width: auto; max-width: 72%; height: clamp(84px, 19svh, 160px); object-fit: contain; }
+  .hero h1 { font-size: clamp(1.4rem, 6.4vw, 1.75rem); margin-top: 1.6svh; }
+  .hero .sub { font-size: 0.95rem; line-height: 1.45; margin-top: 1svh; }
+  .hero .cta { flex-direction: column; align-items: center; gap: 10px; margin-top: 2.2svh; }
+  .hero .cta .btn { width: 100%; max-width: 320px; min-height: 44px; padding: 9px 20px; }
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 2.6svh; }
+  .stat { padding: 12px 0 0; }
+  .stat b { font-size: clamp(1.15rem, 5.6vw, 1.45rem); }
+  .stat span { display: block; font-size: 0.72rem; line-height: 1.3; }
+  .waves { height: 30px; margin-top: 1.6svh; }
+}
+@media (max-width: 600px) and (max-height: 620px) {
+  .hero .sub { display: none; }
+}
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 @media (prefers-reduced-motion: no-preference) { .pin, .card { transition: transform .15s ease; } }
 </style>
@@ -412,12 +420,7 @@ footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
         <p class="label">Ubicación</p>
         <h2>Cerca de todo, por tierra y por mar</h2>
         <p>Punta Peuque, Península de Rilán, comuna de Castro, Provincia de Chiloé.</p>
-        <div class="como">
-          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=-42.5285,-73.7825" target="_blank" rel="noopener">Cómo llegar con Google Maps</a>
-          <a class="btn btn-line" href="https://waze.com/ul?ll=-42.5285,-73.7825&amp;navigate=yes&amp;zoom=15" target="_blank" rel="noopener">Cómo llegar con Waze</a>
-          <a class="btn btn-line" href="https://maps.apple.com/?daddr=-42.5285,-73.7825&amp;dirflg=d" target="_blank" rel="noopener">Apple Maps (iPhone)</a>
-        </div>
-        <p class="hint">Toca un botón y tu aplicación te guía desde donde estés.</p>
+        <a class="btn btn-gold" href="https://www.google.com/maps?q=-42.5285,-73.7825" target="_blank" rel="noopener">Ver en Google Maps</a>
       </div>
       <div class="rutas">
         <div class="ruta"><h3>POR TIERRA</h3>
@@ -431,12 +434,6 @@ footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
           <div><span>Chonchi</span><b>7,7 MN</b></div>
           <div><span>Quehui</span><b>16,2 MN</b></div>
         </div>
-      </div>
-      <div class="mapa">
-        <div class="mapbox">
-          <iframe title="Mapa con la ubicación de Bahía Peuque, Punta Peuque, Castro" src="https://www.google.com/maps?q=-42.5285,-73.7825&amp;z=12&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
-        <small>Ubicación aproximada: -42,5285; -73,7825. Desde Castro son 30 km por tierra o 3,3 millas náuticas por mar.</small>
       </div>
     </div>
   </section>
