@@ -2,475 +2,542 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bahía Peuque · Parcelas frente al mar en Chiloé</title>
-<meta name="description" content="Parcelas de baja densidad en Punta Peuque, Castro, Chiloé. Acceso a playa, agua potable, electricidad y boyas de fondeo.">
+<meta name="description" content="Parcelas de baja densidad en Punta Peuque, Castro, Chiloé. Acceso a playa, agua potable, electricidad y boyas de fondeo. Quedan 6 parcelas disponibles.">
 <meta property="og:title" content="Bahía Peuque · Parcelas frente al mar en Chiloé">
 <meta property="og:description" content="42 parcelas en 39 ha en Punta Peuque, Península de Rilán. Quedan 6 disponibles.">
-<meta property="og:image" content="img/hero.jpg">
+<meta property="og:image" content="https://bahiapeuque.netlify.app/img/atardecer.jpg">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#F7F5F0}
-a{color:#1D6E78}a:hover{color:#12324A}
-.bp-nav a{color:#FFFFFF;text-decoration:none}
-.bp-nav a:hover{color:#BFE6EA}
-.bp-btn{transition:transform .2s ease, background-color .2s ease}
-.bp-btn:hover{transform:translateY(-1px)}
-.bp-ph img{transition:transform .8s ease}
-.bp-ph:hover img{transform:scale(1.04)}
-.bp-pin{transition:transform .15s ease}
-.bp-pin:hover{transform:translate(-50%,-50%) scale(1.08) !important}
-input::placeholder,textarea::placeholder{color:#8FA3AE}
-</style>
-<style>html{scroll-behavior:smooth}</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 </head>
 <body>
-<div style="font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif; color: #17262E; background: #F7F5F0; width: 100%; overflow: hidden">
+<style>
+/* Concepto: banda azul de marca con el logotipo en blanco y una línea de olas; luego secciones de venta sobrias con fotos reales y plano interactivo. */
+:root {
+  --brand: #11307a;
+  --brand-2: #4e6fb6;
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --fg: #16203a;
+  --muted: #55617e;
+  --line: #d9e0ee;
+  --tint: #e6ecf8;
+  --gold: #e3ae45;
+  --on-brand: #ffffff;
+  --font-display: "Marcellus", "Optima", "Palatino Linotype", serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1122; --surface: #131b35; --fg: #e8edf8; --muted: #9eabcb; --line: #25315a; --tint: #1b2547; --brand-2: #86a1dc;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1122; --surface: #131b35; --fg: #e8edf8; --muted: #9eabcb; --line: #25315a; --tint: #1b2547; --brand-2: #86a1dc;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.label { font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-2); font-weight: 700; margin-bottom: 10px; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.12; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 11px 24px; border-radius: 4px; font: inherit; font-weight: 700; font-size: 0.98rem; text-decoration: none; border: 0; cursor: pointer; }
+.btn:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.btn-gold { background: var(--gold); color: #11307a; }
+.btn-line { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.7); }
+.btn-brand { background: var(--brand); color: #fff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-brand { background: var(--brand-2); color: #0b1122; } }
+:root[data-theme="dark"] .btn-brand { background: var(--brand-2); color: #0b1122; }
 
-<!-- HERO -->
-<header id="inicio" style="position: relative; min-height: 820px; display: flex; flex-direction: column; color: #FFFFFF; background: #12324A">
-<img src="img/hero.jpg" alt="Vista aérea de la península de Punta Peuque rodeada de mar" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%">
-<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,28,40,0.55) 0%, rgba(10,28,40,0.10) 35%, rgba(10,28,40,0.25) 60%, rgba(10,28,40,0.85) 100%)"></div>
+/* hero */
+.hero { background: var(--brand); color: #fff; padding-top: 52px; text-align: center; }
+.hero .logo { width: min(420px, 78%); height: auto; display: block; margin: 0 auto; }
+.hero h1 { font-size: clamp(1.7rem, 4.6vw, 2.8rem); line-height: 1.1; margin: 30px auto 0; max-width: 20ch; }
+.hero .sub { margin: 14px auto 0; color: #c9d5f2; max-width: 52ch; }
+.hero .cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0; margin-top: 44px; border-top: 1px solid rgba(255,255,255,0.22); text-align: left; }
+.stat { padding: 20px 16px 0 0; }
+.stat b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 2.3rem; line-height: 1.1; }
+.stat span { color: #c9d5f2; font-size: 0.92rem; }
+.stat.gold b { color: #f2c66b; }
+.waves { display: block; width: 100%; height: 64px; margin-top: 36px; }
 
-<nav class="bp-nav" aria-label="Principal" style="position: relative; z-index: 2; max-width: 1280px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
-<a href="#inicio" style="display: flex; flex-direction: column; gap: 2px; line-height: 1">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; font-weight: 600; letter-spacing: 0.04em">BAHÍA PEUQUE</span>
-<span style="font-size: 11px; letter-spacing: 0.42em; font-weight: 600; opacity: 0.9">CASTRO · CHILOÉ</span>
-</a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; font-weight: 500; letter-spacing: 0.02em">
-<a href="#lugar">El lugar</a>
-<a href="#caracteristicas">Urbanización</a>
-<a href="#parcelas">Parcelas</a>
-<a href="#galeria">Galería</a>
-<a href="#ubicacion">Ubicación</a>
-<a class="bp-btn" href="#contacto" style="background: #FFFFFF; color: #12324A; padding: 12px 22px; border-radius: 999px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Agendar visita</a>
-</div>
-</nav>
+section { padding-block: 72px; }
 
-<div style="position: relative; z-index: 2; flex: 1; max-width: 1280px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 80px 32px 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 28px">
-<span style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; font-size: 13px; letter-spacing: 0.24em; font-weight: 600; text-transform: uppercase; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.35); padding: 9px 16px; border-radius: 999px">Punta Peuque · Península de Rilán</span>
-<h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(48px, 7vw, 104px); line-height: 0.95; letter-spacing: -0.01em; max-width: 960px; text-wrap: balance">Tu lugar frente al mar, en el corazón de <em style="font-style: italic; color: #BFE6EA">Chiloé</em></h1>
-<p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; max-width: 620px; color: rgba(255,255,255,0.92)">Parcelación exclusiva y de baja densidad: 42 parcelas en 39 hectáreas, con acceso a playa, agua potable, electricidad y boyas de fondeo para tu embarcación.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a class="bp-btn" href="#parcelas" style="background: #E3AE45; color: #12324A; text-decoration: none; font-weight: 700; font-size: 16px; padding: 17px 30px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">Ver parcelas disponibles
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
-<a class="bp-btn" href="https://wa.me/56990388036" style="background: transparent; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.7); min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Escribir por WhatsApp</a>
+/* lugar */
+.lugar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 48px; align-items: center; }
+.lugar .txt { display: grid; gap: 18px; }
+.lugar .txt p { color: var(--muted); max-width: 56ch; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chip { background: var(--tint); color: var(--fg); font-size: 0.88rem; font-weight: 600; padding: 7px 14px; border-radius: 999px; }
+.fotos { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: 190px 190px; gap: 12px; }
+.fotos figure, .gal figure, .casas figure { margin: 0; overflow: hidden; border-radius: 6px; background: var(--tint); position: relative; }
+.fotos img, .gal img, .casas img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fotos .big { grid-row: 1 / 3; }
+
+/* urbanización */
+.urb { background: var(--brand); color: #fff; }
+.urb .label { color: #9fb7ee; }
+.urb-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 40px; margin-bottom: 36px; }
+.urb-head p { max-width: 42ch; color: #c9d5f2; }
+.feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.16); border-radius: 6px; overflow: hidden; }
+.feat { background: var(--brand); padding: 26px 24px; display: grid; gap: 10px; align-content: start; }
+.feat svg { width: 28px; height: 28px; stroke: #9fb7ee; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.feat h3 { font-size: 1.2rem; }
+.feat p { font-size: 0.95rem; color: #c9d5f2; line-height: 1.55; }
+
+/* parcelas */
+.p-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 32px; margin-bottom: 32px; }
+.tipos { display: flex; flex-wrap: wrap; gap: 8px; }
+.tipo { border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 0.88rem; color: var(--muted); }
+.tipo b { color: var(--fg); }
+.p-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: start; }
+.plano { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.plano .stage { position: relative; max-width: 520px; margin: 0 auto; }
+.plano img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.pin { position: absolute; transform: translate(-50%, -50%); min-width: 48px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer; font: 800 0.9rem var(--font-body); background: #fff; color: #11307a; border: 2px solid #11307a; box-shadow: 0 5px 14px rgba(17,48,122,0.3); z-index: 2; }
+.pin[aria-pressed="true"] { background: var(--gold); border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(227,174,69,0.4), 0 8px 18px rgba(17,48,122,0.35); z-index: 3; }
+.leyenda { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 14px 6px 2px; font-size: 0.82rem; color: #4a5570; }
+.leyenda i { display: inline-block; width: 13px; height: 13px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
+.detalle { background: var(--brand); color: #fff; border-radius: 8px; overflow: hidden; }
+.detalle .foto { position: relative; height: 220px; background: #1b3f8f; }
+.detalle .foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.badge { position: absolute; left: 16px; top: 16px; background: var(--gold); color: #11307a; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; padding: 6px 12px; border-radius: 999px; }
+.ref { position: absolute; right: 12px; bottom: 10px; font-size: 0.74rem; background: rgba(8,20,52,0.6); padding: 3px 10px; border-radius: 999px; }
+.detalle .body { padding: 24px 26px 26px; display: grid; gap: 18px; }
+.titulo { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; }
+.titulo small { display: block; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: #9fb7ee; font-weight: 700; }
+.titulo h3 { font-size: 3rem; line-height: 1; }
+.valor { text-align: right; }
+.valor small { letter-spacing: 0; text-transform: none; font-weight: 400; color: #c9d5f2; }
+.valor b { font-family: var(--font-display); font-weight: 400; font-size: 2.2rem; line-height: 1.1; color: #f2c66b; }
+.datos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: rgba(255,255,255,0.2); border-radius: 6px; overflow: hidden; }
+.datos div { background: #1b3f8f; padding: 12px 14px; }
+.datos span { display: block; font-size: 0.76rem; color: #c9d5f2; }
+.datos b { font-size: 1.05rem; }
+.desc { color: #dbe4fa; font-size: 0.97rem; line-height: 1.6; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-top: 14px; }
+.card { font: inherit; text-align: left; cursor: pointer; display: grid; gap: 2px; padding: 12px 14px; border-radius: 6px; background: var(--surface); color: var(--fg); border: 2px solid var(--line); }
+.card[aria-pressed="true"] { border-color: var(--brand-2); }
+.card b { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; line-height: 1.1; }
+.card span { font-size: 0.82rem; color: var(--muted); }
+.card em { font-style: normal; font-weight: 700; font-size: 0.88rem; color: var(--brand-2); }
+.nota { font-size: 0.82rem; color: var(--muted); margin-top: 12px; }
+
+/* comunidad */
+.com { background: var(--tint); }
+.com-in { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 40px; align-items: center; }
+.com .pct { display: flex; align-items: baseline; gap: 12px; margin: 10px 0 14px; }
+.com .pct b { font-family: var(--font-display); font-weight: 400; font-size: clamp(4.5rem, 10vw, 7rem); line-height: 0.9; color: var(--brand-2); }
+.com .pct span { font-weight: 700; font-size: 1.1rem; }
+.com p.t { color: var(--muted); }
+.casas { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.casas figure { height: 250px; }
+.casas figcaption, .gal figcaption { position: absolute; left: 10px; bottom: 10px; font-size: 0.8rem; font-weight: 600; color: #fff; background: rgba(8,20,52,0.62); padding: 4px 10px; border-radius: 999px; }
+
+/* galería */
+.gal { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-auto-rows: 220px; gap: 12px; margin-top: 28px; }
+.gal .tall { grid-row: span 2; }
+
+/* ubicación */
+.ubi { position: relative; background: #0d2563; color: #fff; overflow: hidden; }
+.ubi > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.28; }
+.ubi .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 40px; align-items: start; }
+.ubi .label { color: #9fb7ee; }
+.ubi .txt { display: grid; gap: 16px; justify-items: start; }
+.ubi .txt p { color: #dbe4fa; }
+.rutas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.ruta { background: rgba(13,37,99,0.82); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 22px 24px; }
+.ruta h3 { font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.18em; font-weight: 700; color: #9fb7ee; margin-bottom: 8px; }
+.ruta div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.ruta div:last-child { border-bottom: 0; }
+.ruta b { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; white-space: nowrap; }
+
+/* contacto */
+.contacto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.contacto .txt { display: grid; gap: 16px; }
+.contacto .txt > p { color: var(--muted); max-width: 52ch; }
+.quien b { display: block; font-size: 1.15rem; }
+.quien span { color: var(--muted); font-size: 0.95rem; }
+.rows { display: grid; gap: 12px; }
+.row { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
+.row div { min-width: 0; }
+.row small { display: block; font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.row strong { font-weight: 600; overflow-wrap: anywhere; user-select: all; }
+.copy { font: inherit; font-size: 0.85rem; background: var(--tint); color: var(--fg); border: 0; border-radius: 4px; padding: 8px 14px; cursor: pointer; }
+.wa { justify-self: start; }
+
+footer { background: var(--brand); color: #fff; padding-block: 32px; }
+footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+footer img { height: 88px; width: auto; display: block; }
+footer nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.92rem; font-weight: 600; }
+footer a { color: #fff; text-decoration: none; }
+footer small { color: #c9d5f2; font-size: 0.82rem; }
+
+@media (max-width: 820px) {
+  section { padding-block: 52px; }
+  .lugar, .p-grid, .com-in, .ubi .wrap, .contacto { grid-template-columns: minmax(0, 1fr); }
+  .fotos { grid-template-rows: 150px 150px; }
+  .valor { text-align: left; }
+}
+
+/* V 1.2: barra fija, galería ordenada, ajustes celular */
+html { scroll-padding-top: calc(68px + env(safe-area-inset-top, 0px)); }
+.bar { position: sticky; top: 0; z-index: 50; background: var(--brand); border-bottom: 1px solid rgba(255,255,255,0.16); }
+.bar-in { display: flex; align-items: center; gap: 12px; min-height: 60px; }
+.bar-brand { font-family: var(--font-display); font-size: 1.2rem; color: #fff; text-decoration: none; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+.bar-nav { display: flex; gap: 2px; margin-left: auto; }
+.bar-nav a { color: #fff; text-decoration: none; font-size: 0.92rem; font-weight: 600; padding: 0 12px; min-height: 44px; display: inline-flex; align-items: center; border-radius: 4px; }
+.bar-nav a:hover { background: rgba(255,255,255,0.12); }
+.bar a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.bar-wa { min-height: 44px; padding: 8px 18px; font-size: 0.92rem; }
+.copy { min-height: 44px; padding: 8px 16px; }
+footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.detalle { scroll-margin-top: 72px; }
+.gal { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 190px; }
+@media (min-width: 1001px) {
+  .gal { grid-template-columns: repeat(5, minmax(0, 1fr)); grid-auto-rows: 230px; }
+  .gal figure:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+  .gal figure:nth-child(6) { grid-column: 5; grid-row: 1 / 3; }
+}
+@media (max-width: 820px) {
+  .bar-nav a:not([href="#parcelas"]):not([href="#ubicacion"]) { display: none; }
+  .hero { padding-top: 28px; }
+  .p-grid > div:last-child { display: grid; gap: 14px; }
+  .cards { order: -1; margin-top: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .nota { margin-top: 0; }
+  .pin { min-width: 38px; height: 30px; padding: 0 6px; font-size: 0.76rem; border-width: 2px; }
+  .pin[aria-pressed="true"] { border-width: 2px; }
+  .detalle .foto { height: 190px; }
+  .detalle .body { padding: 20px 18px 22px; }
+  .titulo h3 { font-size: 2.4rem; }
+  .valor b { font-size: 1.9rem; }
+  .datos b { font-size: 0.98rem; white-space: nowrap; }
+  .datos div { padding: 12px 10px; }
+  .gal { grid-auto-rows: 170px; gap: 10px; }
+  .casas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .casas figure { height: 200px; }
+  .casas figure:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .bar-nav a[href="#ubicacion"] { display: none; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat b { font-size: 1.9rem; }
+  .feats { grid-template-columns: minmax(0, 1fr); }
+  .feat { grid-template-columns: 28px minmax(0, 1fr); column-gap: 14px; row-gap: 4px; padding: 18px; }
+  .feat svg { grid-row: 1 / 3; margin-top: 2px; }
+  .feat h3 { grid-column: 2; font-size: 1.1rem; }
+  .feat p { grid-column: 2; }
+  .urb-head { margin-bottom: 24px; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+@media (prefers-reduced-motion: no-preference) { .pin, .card { transition: transform .15s ease; } }
+</style>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <a class="bar-brand" href="#top">Bahía Peuque</a>
+    <nav class="bar-nav" aria-label="Principal">
+      <a href="#lugar">El lugar</a><a href="#urbanizacion">Urbanización</a><a href="#parcelas">Parcelas</a><a href="#galeria">Galería</a><a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="btn btn-gold bar-wa" href="https://wa.me/56990388036" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 </div>
 
-<div style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); border-top: 1px solid rgba(255,255,255,0.3)">
-<div style="padding: 22px 24px 0 0; display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1">39 ha</span>
-<span style="font-size: 14px; color: rgba(255,255,255,0.85)">de naturaleza y borde costero</span>
-</div>
-<div style="padding: 22px 24px 0 0; display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1">42</span>
-<span style="font-size: 14px; color: rgba(255,255,255,0.85)">parcelas de 5.000 a 19.300 m²</span>
-</div>
-<div style="padding: 22px 24px 0 0; display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1; color: #F2C66B">6</span>
-<span style="font-size: 14px; color: rgba(255,255,255,0.85)">parcelas disponibles hoy</span>
-</div>
-<div style="padding: 22px 24px 0 0; display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1">30 km</span>
-<span style="font-size: 14px; color: rgba(255,255,255,0.85)">de Castro · 3,3 millas por mar</span>
-</div>
-</div>
-</div>
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="logo" data-img="logo" alt="Bahía Peuque, Chiloé" width="1000" height="640">
+    <h1>Parcelas frente al mar en Punta Peuque</h1>
+    <p class="sub">Parcelación de baja densidad en la Península de Rilán, comuna de Castro, Isla Grande de Chiloé.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#parcelas">Ver parcelas disponibles</a>
+      <a class="btn btn-line" href="https://wa.me/56990388036" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>39 ha</b><span>de naturaleza y borde costero</span></div>
+      <div class="stat"><b>42</b><span>parcelas de 5.000 a 19.300 m²</span></div>
+      <div class="stat gold"><b>6</b><span>parcelas disponibles hoy</span></div>
+      <div class="stat"><b>30 km</b><span>de Castro · 3,3 millas por mar</span></div>
+    </div>
+  </div>
+  <svg class="waves" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40 C 150 10, 300 10, 450 34 S 750 62, 900 34 S 1100 10, 1200 30 L1200 64 L0 64 Z" fill="#4e6fb6" opacity="0.55"/>
+    <path d="M0 52 C 200 28, 380 30, 560 50 S 900 66, 1200 44 L1200 64 L0 64 Z" style="fill:var(--bg)"/>
+  </svg>
 </header>
 
-<!-- EL LUGAR -->
-<section id="lugar" style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 72px; align-items: center">
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #1D6E78; text-transform: uppercase">El lugar</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; color: #12324A; text-wrap: balance">Una península entre bosque nativo y mar abierto</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #3C4E57">Bahía Peuque es una parcelación semi-urbanizada en Punta Peuque, comuna de Castro. Las parcelas se trazaron según la topografía y la vista, para que cada propietario tenga espacio, privacidad y una relación directa con el paisaje chilote.</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #3C4E57">Todas las parcelas llegan al mar por el camino interno, y la bahía cuenta con boyas de fondeo. Desde la orilla se ve pasar la Regata de Chiloé.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
-<span style="font-size: 14px; font-weight: 600; color: #12324A; background: #E4EFEF; padding: 10px 16px; border-radius: 999px">27 parcelas bordemar</span>
-<span style="font-size: 14px; font-weight: 600; color: #12324A; background: #E4EFEF; padding: 10px 16px; border-radius: 999px">Reglamento interno</span>
-<span style="font-size: 14px; font-weight: 600; color: #12324A; background: #E4EFEF; padding: 10px 16px; border-radius: 999px">65% ya vendido</span>
-</div>
-</div>
-<div style="flex: 1 1 520px; min-width: 0; position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: 240px 120px 240px; gap: 16px">
-<figure class="bp-ph" style="margin: 0; grid-column: 1 / 5; grid-row: 1 / 3; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/atardecer.jpg" alt="Atardecer sobre la bahía desde Punta Peuque" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</figure>
-<figure class="bp-ph" style="margin: 0; grid-column: 5 / 7; grid-row: 1 / 2; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/regata.jpg" alt="Veleros de la Regata de Chiloé frente a Peuque" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</figure>
-<figure class="bp-ph" style="margin: 0; grid-column: 3 / 7; grid-row: 3 / 4; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/costa.jpg" alt="Borde costero de Bahía Peuque visto desde el aire" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</figure>
-<div style="grid-column: 1 / 3; grid-row: 3 / 4; border-radius: 20px; background: #12324A; color: #FFFFFF; padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
-<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#BFE6EA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"></path><path d="M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"></path><path d="M12 3v9"></path><path d="M12 3 6 11h6"></path><path d="M12 5l5 6h-5"></path></svg>
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; line-height: 1.15">Navega a Castro en 3,3 millas náuticas</span>
-</div>
-</div>
-</section>
+<main>
+  <section id="lugar">
+    <div class="wrap lugar">
+      <div class="txt">
+        <p class="label">El lugar</p>
+        <h2>Una península entre bosque nativo y mar abierto</h2>
+        <p>Bahía Peuque es una parcelación semi-urbanizada en Punta Peuque, comuna de Castro. Las parcelas se trazaron según la topografía y la vista, para que cada propietario tenga espacio, privacidad y una relación directa con el paisaje chilote.</p>
+        <p>Todas las parcelas llegan al mar por el camino interno, y la bahía cuenta con boyas de fondeo. Desde la orilla se ve pasar la Regata de Chiloé.</p>
+        <div class="chips"><span class="chip">27 parcelas bordemar</span><span class="chip">Reglamento interno</span><span class="chip">65% ya vendido</span></div>
+      </div>
+      <div class="fotos">
+        <figure class="big"><img data-img="atardecer" alt="Atardecer sobre la bahía desde Punta Peuque"></figure>
+        <figure><img data-img="veleros1" alt="Veleros de la Regata de Chiloé frente a Peuque"></figure>
+        <figure><img data-img="borde" alt="Borde costero de Bahía Peuque visto desde el aire"></figure>
+      </div>
+    </div>
+  </section>
 
-<!-- URBANIZACION -->
-<section id="caracteristicas" style="background: #12324A; color: #FFFFFF">
-<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 18px; max-width: 680px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #8FD3DB; text-transform: uppercase">Urbanización</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; text-wrap: balance">Todo listo para construir tu casa</h2>
-</div>
-<p style="margin: 0; max-width: 420px; font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.8)">Servicios a orilla de camino para todas las parcelas, áreas comunes y normas de convivencia que cuidan la tranquilidad de los propietarios.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr)); gap: 1px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; overflow: hidden">
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"></path><circle cx="17" cy="7" r="3"></circle><path d="M3 13l5-5 4 4"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Acceso a playa</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Todas las parcelas llegan al mar por el camino interno de la parcelación.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"></path><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Agua potable</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Red interna para todas las parcelas, con derechos de agua y caudal para el proyecto completo.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Electricidad y luminarias</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Postación a orilla de camino frente a cada parcela y luminarias en distintos puntos del vial.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path><circle cx="12" cy="15.5" r="1.5"></circle></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Acceso controlado</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Portón automático, cámaras de seguridad, casa del administrador y bodega común.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 21"></path><path d="M16 3l4 18"></path><path d="M12 5v2"></path><path d="M12 11v2"></path><path d="M12 17v2"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Caminos de 6 m de calzada</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Faja de 10 m con cunetas para aguas lluvia y canalización de servicios. 2,8 km de caminos.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"></circle><path d="M12 7v14"></path><path d="M5 13a7 7 0 0 0 14 0"></path><path d="M8 11h8"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Boyas de fondeo</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Muertos de 6.000 kg para fondear embarcaciones con seguridad en la bahía.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-7"></path><path d="M7 15h10L12 3z"></path><path d="M5 22h14"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Áreas comunes</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Senderos, estacionamientos y casa del cuidador para la comunidad.</p>
-</div>
-<div style="background: #12324A; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8FD3DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 13h6"></path><path d="M9 17h4"></path></svg>
-<h3 style="margin: 0; font-size: 19px; font-weight: 700">Reglamento interno</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78)">Regula densidad, gastos comunes y convivencia para asegurar la tranquilidad del lugar.</p>
-</div>
-</div>
-</div>
-</section>
+  <section class="urb" id="urbanizacion">
+    <div class="wrap">
+      <div class="urb-head">
+        <div><p class="label">Urbanización</p><h2>Todo listo para construir tu casa</h2></div>
+        <p>Servicios a orilla de camino para todas las parcelas, áreas comunes y normas de convivencia que cuidan la tranquilidad de los propietarios.</p>
+      </div>
+      <div class="feats">
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="17" cy="7" r="3"/><path d="M3 13l5-5 4 4"/></svg><h3>Acceso a playa</h3><p>Todas las parcelas llegan al mar por el camino interno de la parcelación.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><h3>Agua potable</h3><p>Red interna para todas las parcelas, con derechos de agua y caudal para el proyecto completo.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><h3>Electricidad y luminarias</h3><p>Postación a orilla de camino frente a cada parcela y luminarias en distintos puntos del vial.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.5"/></svg><h3>Acceso controlado</h3><p>Portón automático, cámaras de seguridad, casa del administrador y bodega común.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3 4 21"/><path d="M16 3l4 18"/><path d="M12 5v2"/><path d="M12 11v2"/><path d="M12 17v2"/></svg><h3>Caminos de 6 m de calzada</h3><p>Faja de 10 m con cunetas para aguas lluvia y canalización de servicios. 2,8 km de caminos.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M5 13a7 7 0 0 0 14 0"/><path d="M8 11h8"/></svg><h3>Boyas de fondeo</h3><p>Muertos de 6.000 kg para fondear embarcaciones con seguridad en la bahía.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22v-7"/><path d="M7 15h10L12 3z"/><path d="M5 22h14"/></svg><h3>Áreas comunes</h3><p>Senderos, estacionamientos y casa del cuidador para la comunidad.</p></div>
+        <div class="feat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg><h3>Reglamento interno</h3><p>Regula densidad, gastos comunes y convivencia para asegurar la tranquilidad del lugar.</p></div>
+      </div>
+    </div>
+  </section>
 
-<!-- PARCELAS -->
-<section id="parcelas" style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 120px 32px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 18px; max-width: 700px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #1D6E78; text-transform: uppercase">Parcelas disponibles</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; color: #12324A; text-wrap: balance">Quedan 6 parcelas. Elige la tuya en el plano.</h2>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<span style="font-size: 14px; color: #3C4E57; border: 1px solid #D9D3C6; padding: 10px 16px; border-radius: 999px"><strong style="color: #12324A">Tipo A</strong> · 27 bordemar</span>
-<span style="font-size: 14px; color: #3C4E57; border: 1px solid #D9D3C6; padding: 10px 16px; border-radius: 999px"><strong style="color: #12324A">Tipo B</strong> · 5 borde exterior</span>
-<span style="font-size: 14px; color: #3C4E57; border: 1px solid #D9D3C6; padding: 10px 16px; border-radius: 999px"><strong style="color: #12324A">Tipo C</strong> · 10 interiores</span>
-</div>
-</div>
+  <section id="parcelas">
+    <div class="wrap">
+      <div class="p-head">
+        <div><p class="label">Parcelas disponibles</p><h2>Quedan 6 parcelas. Elige la tuya en el plano.</h2></div>
+        <div class="tipos">
+          <span class="tipo"><b>Tipo A</b> · 27 bordemar</span>
+          <span class="tipo"><b>Tipo B</b> · 5 borde exterior</span>
+          <span class="tipo"><b>Tipo C</b> · 10 interiores</span>
+        </div>
+      </div>
+      <div class="p-grid">
+        <div>
+          <div class="plano">
+            <div class="stage" id="stage">
+              <img data-img="plano" alt="Plano de la parcelación Bahía Peuque con las parcelas disponibles destacadas" width="1000" height="1234">
+            </div>
+            <div class="leyenda">
+              <span><i style="background:#1D6E78"></i>Disponible</span>
+              <span><i style="background:#FBF9F4;border:1px solid #9A917C"></i>Vendida</span>
+              <span><i style="background:#E2DBCB"></i>No disponible</span>
+              <span><i style="background:#BFD3AE"></i>Área común</span>
+              <span><i style="background:#A9C2BD"></i>Náutica (A8)</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <article class="detalle" aria-live="polite">
+            <div class="foto">
+              <img id="d-img" alt="">
+              <span class="badge">DISPONIBLE</span>
+              <span class="ref">Imagen referencial · <span id="d-corto"></span></span>
+            </div>
+            <div class="body">
+              <div class="titulo">
+                <div><small id="d-tipo"></small><h3>Parcela <span id="d-id"></span></h3></div>
+                <div class="valor"><small>Valor</small><br><b id="d-uf"></b></div>
+              </div>
+              <div class="datos">
+                <div><span>Superficie</span><b id="d-sup"></b></div>
+                <div><span>Valor por m²</span><b id="d-ufm2"></b></div>
+                <div><span>Hectáreas</span><b id="d-ha"></b></div>
+              </div>
+              <p class="desc" id="d-desc"></p>
+              <a class="btn btn-gold" id="d-wa" href="https://wa.me/56990388036" target="_blank" rel="noopener" style="justify-self:start">Consultar por la parcela</a>
+            </div>
+          </article>
+          <div class="cards" id="cards"></div>
+          <p class="nota">Valores referenciales a enero de 2026, expresados en UF. Superficies según plano de subdivisión. Sujeto a disponibilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
-<!-- plano -->
-<div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 20px; box-sizing: border-box; box-shadow: 0 1px 0 #E6E1D6, 0 24px 60px -30px rgba(18,50,74,0.35)">
-<div style="position: relative; width: 100%; max-width: 560px; margin: 0 auto">
-<img src="img/plano.svg" alt="Plano de la parcelación Bahía Peuque con las parcelas disponibles destacadas" style="width: 100%; height: auto; display: block; border-radius: 16px">
-<div id="pins" style="display: contents"></div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 18px; padding: 18px 8px 4px; font-size: 13px; color: #3C4E57">
-<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #1D6E78"></span>Disponible</span>
-<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #FBF9F4; border: 1px solid #9A917C; box-sizing: border-box"></span>Vendida</span>
-<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #E2DBCB"></span>No disponible</span>
-<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #BFD3AE"></span>Área común</span>
-<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #A9C2BD"></span>Náutica (A8)</span>
-</div>
-</div>
+  <section class="com">
+    <div class="wrap com-in">
+      <div>
+        <p class="label">Una comunidad que ya vive aquí</p>
+        <div class="pct"><b>65%</b><span>vendido</span></div>
+        <p class="t">Los propietarios ya están construyendo. Hay casas terminadas en las parcelas A13, A17 y A06–A07, y nuevas obras en marcha.</p>
+      </div>
+      <div class="casas">
+        <figure><img data-img="a13" alt="Casa en la parcela A13 frente al mar"><figcaption>Casa A13</figcaption></figure>
+        <figure><img data-img="a17" alt="Casa en la parcela A17 sobre el borde costero"><figcaption>Casa A17</figcaption></figure>
+        <figure><img data-img="a06" alt="Casas en las parcelas A06 y A07"><figcaption>Casas A06–A07</figcaption></figure>
+      </div>
+    </div>
+  </section>
 
-<!-- detalle -->
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<article style="background: #12324A; color: #FFFFFF; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
-<div style="position: relative; height: 240px; background: #1D4A63">
-<img id="sel-img" src="img/tipo-a.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<span style="position: absolute; left: 20px; top: 20px; background: #E3AE45; color: #12324A; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; padding: 8px 12px; border-radius: 999px">DISPONIBLE</span>
-<span style="position: absolute; right: 16px; bottom: 12px; font-size: 12px; color: rgba(255,255,255,0.9); background: rgba(10,28,40,0.55); padding: 4px 10px; border-radius: 999px">Imagen referencial · <span data-f="tipoCorto"></span></span>
-</div>
-<div style="padding: 30px 32px 32px; display: flex; flex-direction: column; gap: 22px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 13px; letter-spacing: 0.2em; font-weight: 600; color: #8FD3DB; text-transform: uppercase"><span data-f="tipo"></span></span>
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 64px; font-weight: 500; line-height: 0.9">Parcela <span data-f="id"></span></span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px">
-<span style="font-size: 13px; color: rgba(255,255,255,0.75)">Valor</span>
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 44px; font-weight: 600; line-height: 1; color: #F2C66B"><span data-f="uf"></span></span>
-</div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: rgba(255,255,255,0.16); border-radius: 16px; overflow: hidden">
-<div style="background: #17405C; padding: 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; color: rgba(255,255,255,0.75)">Superficie</span>
-<span style="font-size: 20px; font-weight: 700"><span data-f="sup"></span></span>
-</div>
-<div style="background: #17405C; padding: 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; color: rgba(255,255,255,0.75)">Valor por m²</span>
-<span style="font-size: 20px; font-weight: 700"><span data-f="ufm2"></span></span>
-</div>
-<div style="background: #17405C; padding: 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; color: rgba(255,255,255,0.75)">Hectáreas</span>
-<span style="font-size: 20px; font-weight: 700"><span data-f="ha"></span></span>
-</div>
-</div>
-<p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(255,255,255,0.85)"><span data-f="desc"></span></p>
-<a class="bp-btn" href="#contacto" style="align-self: flex-start; background: #FFFFFF; color: #12324A; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 26px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Consultar por la parcela <span data-f="id"></span></a>
-</div>
-</article>
+  <section id="galeria">
+    <div class="wrap">
+      <p class="label">Galería</p>
+      <h2>Así se vive Bahía Peuque</h2>
+      <div class="gal">
+        <figure class="tall"><img data-img="aerea" alt="Vista aérea de la península de Bahía Peuque"><figcaption>Vista aérea</figcaption></figure>
+        <figure><img data-img="bordemar" alt="Parcelas tipo A en el borde costero"><figcaption>Parcelas bordemar</figcaption></figure>
+        <figure><img data-img="veleros2" alt="Veleros pasando frente a la costa de Peuque"><figcaption>Regata de Chiloé</figcaption></figure>
+        <figure><img data-img="boya" alt="Boya de amarre en la bahía"><figcaption>Boya de amarre (6 t)</figcaption></figure>
+        <figure><img data-img="cuidador" alt="Casa del cuidador y caminos interiores"><figcaption>Casa del cuidador</figcaption></figure>
+        <figure class="tall"><img data-img="porton" alt="Portón automático de acceso entre árboles"><figcaption>Acceso controlado</figcaption></figure>
+        <figure><img data-img="vistaB1" alt="Vista al mar desde una parcela"><figcaption>Vista desde la parcela B1</figcaption></figure>
+        <figure><img data-img="bahia" alt="Vista aérea de la bahía y la península"><figcaption>La bahía</figcaption></figure>
+      </div>
+    </div>
+  </section>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr)); gap: 12px">
-<div id="cards" style="display: contents"></div>
-</div>
-<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #5B6B73">Valores referenciales a enero de 2026, expresados en UF. Superficies según plano de subdivisión. Sujeto a disponibilidad.</p>
-</div>
-</div>
-</section>
+  <section class="ubi" id="ubicacion">
+    <img data-img="mapa" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="txt">
+        <p class="label">Ubicación</p>
+        <h2>Cerca de todo, por tierra y por mar</h2>
+        <p>Punta Peuque, Península de Rilán, comuna de Castro, Provincia de Chiloé.</p>
+        <a class="btn btn-gold" href="https://www.google.com/maps?q=-42.5285,-73.7825" target="_blank" rel="noopener">Ver en Google Maps</a>
+      </div>
+      <div class="rutas">
+        <div class="ruta"><h3>POR TIERRA</h3>
+          <div><span>Castro</span><b>30 km</b></div>
+          <div><span>Dalcahue</span><b>27,7 km</b></div>
+          <div><span>Aeropuerto</span><b>36 km</b></div>
+        </div>
+        <div class="ruta"><h3>POR MAR</h3>
+          <div><span>Castro</span><b>3,3 MN</b></div>
+          <div><span>Marina Quinched</span><b>4,9 MN</b></div>
+          <div><span>Chonchi</span><b>7,7 MN</b></div>
+          <div><span>Quehui</span><b>16,2 MN</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- COMUNIDAD -->
-<section style="background: #ECE7DC">
-<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #1D6E78; text-transform: uppercase">Una comunidad que ya vive aquí</span>
-<div style="display: flex; align-items: baseline; gap: 14px">
-<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(96px, 11vw, 150px); font-weight: 500; line-height: 0.85; color: #12324A">65%</span>
-<span style="font-size: 18px; font-weight: 600; color: #12324A">vendido</span>
-</div>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #3C4E57">Los propietarios ya están construyendo. Hay casas terminadas en las parcelas A13, A17 y A06–A07, y nuevas obras en marcha.</p>
-</div>
-<div style="flex: 2 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
-<figure class="bp-ph" style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 20px; overflow: hidden; background: #D8D2C4"><img src="img/casa-a13.jpg" alt="Casa en la parcela A13 frente al mar" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<figcaption style="font-size: 14px; font-weight: 600; color: #12324A">Casa A13</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 20px; overflow: hidden; background: #D8D2C4"><img src="img/casa-a17.jpg" alt="Casa en la parcela A17 sobre el borde costero" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<figcaption style="font-size: 14px; font-weight: 600; color: #12324A">Casa A17</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<div style="height: 300px; border-radius: 20px; overflow: hidden; background: #D8D2C4"><img src="img/casas.jpg" alt="Casas en las parcelas A06 y A07" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<figcaption style="font-size: 14px; font-weight: 600; color: #12324A">Casas A06–A07</figcaption>
-</figure>
-</div>
-</div>
-</section>
+  <section id="contacto">
+    <div class="wrap contacto">
+      <div class="txt">
+        <p class="label">Contacto</p>
+        <h2>Ven a conocer Bahía Peuque</h2>
+        <p>Coordinamos una visita a terreno para que recorras las parcelas disponibles y la playa.</p>
+        <div class="quien"><b>Drago Bartulin Cortese</b><span>O’Higgins 755, piso 2, Castro</span></div>
+      </div>
+      <div class="rows">
+        <div class="row"><div><small>Teléfono</small><strong id="tel">+56 9 9038 8036</strong></div><button class="copy" type="button" data-copy="tel" id="b-tel">Copiar</button></div>
+        <div class="row"><div><small>Correo</small><strong id="mail">drago.bartulin@gmail.com</strong></div><button class="copy" type="button" data-copy="mail" id="b-mail">Copiar</button></div>
+        <a class="btn btn-brand wa" href="https://wa.me/56990388036" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-<!-- GALERIA -->
-<section id="galeria" style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 120px 32px; display: flex; flex-direction: column; gap: 44px">
-<div style="display: flex; flex-direction: column; gap: 18px; max-width: 700px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #1D6E78; text-transform: uppercase">Galería</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; color: #12324A">Así se vive Bahía Peuque</h2>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); grid-auto-rows: 260px; gap: 16px">
-<figure class="bp-ph" style="margin: 0; grid-row: span 2; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/peninsula.jpg" alt="Vista aérea de la península de Bahía Peuque" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Vista aérea</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/tipo-a.jpg" alt="Parcelas tipo A en el borde costero" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Parcelas bordemar</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/regata2.jpg" alt="Veleros pasando frente a la costa de Peuque" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Regata de Chiloé</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/boya.jpg" alt="Boya de amarre en la bahía" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Boya de amarre (6 t)</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/cuidador.jpg" alt="Casa del cuidador y caminos interiores" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Casa del cuidador</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; grid-row: span 2; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/porton.jpg" alt="Portón automático de acceso entre árboles" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Acceso controlado</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/vista-b1.jpg" alt="Vista al mar desde una parcela" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">Vista desde la parcela B1</figcaption>
-</figure>
-<figure class="bp-ph" style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: #DDE6E6">
-<img src="img/aerea.jpg" alt="Vista aérea de la bahía y la península" style="width: 100%; height: 100%; object-fit: cover; display: block">
-<figcaption style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 600; color: #FFFFFF; background: rgba(10,28,40,0.6); padding: 7px 12px; border-radius: 999px">La bahía</figcaption>
-</figure>
-</div>
-</section>
-
-<!-- UBICACION -->
-<section id="ubicacion" style="position: relative; color: #FFFFFF; background: #0F2A3D">
-<img src="img/costa-camino.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35">
-<div style="position: relative; max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
-<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #8FD3DB; text-transform: uppercase">Ubicación</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; text-wrap: balance">Cerca de todo, por tierra y por mar</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.85)">Punta Peuque, Península de Rilán, comuna de Castro, Provincia de Chiloé.</p>
-<a class="bp-btn" href="https://www.google.com/maps?q=-42.5285,-73.7825" style="align-self: flex-start; color: #12324A; background: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 26px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Ver en Google Maps</a>
-</div>
-<div style="flex: 1 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 20px">
-<div style="background: rgba(15,42,61,0.78); border: 1px solid rgba(255,255,255,0.18); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
-<span style="font-size: 13px; letter-spacing: 0.2em; font-weight: 700; color: #8FD3DB">POR TIERRA</span>
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 14px"><span style="font-size: 17px">Castro</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">30 km</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 14px"><span style="font-size: 17px">Dalcahue</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">27,7 km</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 17px">Aeropuerto</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">36 km</span></div>
-</div>
-<div style="background: rgba(15,42,61,0.78); border: 1px solid rgba(255,255,255,0.18); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
-<span style="font-size: 13px; letter-spacing: 0.2em; font-weight: 700; color: #8FD3DB">POR MAR</span>
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 14px"><span style="font-size: 17px">Castro</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">3,3 MN</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 14px"><span style="font-size: 17px">Marina Quinched</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">4,9 MN</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 14px"><span style="font-size: 17px">Chonchi</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">7,7 MN</span></div>
-<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 17px">Quehui</span><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600">16,2 MN</span></div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
-<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 700; color: #1D6E78; text-transform: uppercase">Contacto</span>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(38px, 4.2vw, 60px); line-height: 1.02; color: #12324A; text-wrap: balance">Ven a conocer Bahía Peuque</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #3C4E57">Coordinamos una visita a terreno para que recorras las parcelas disponibles y la playa.</p>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-<span style="font-size: 20px; font-weight: 700; color: #12324A">Drago Bartulin Cortese</span>
-<span style="font-size: 15px; color: #5B6B73">O’Higgins 755, piso 2, Castro</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<a href="tel:+56990388036" style="display: inline-flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 600; color: #12324A; text-decoration: none; min-height: 44px">
-<span style="width: 44px; height: 44px; border-radius: 999px; background: #E4EFEF; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D6E78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></span>+56 9 9038 8036</a>
-<a href="mailto:drago.bartulin@gmail.com" style="display: inline-flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 600; color: #12324A; text-decoration: none; min-height: 44px">
-<span style="width: 44px; height: 44px; border-radius: 999px; background: #E4EFEF; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D6E78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>drago.bartulin@gmail.com</a>
-<a class="bp-btn" href="https://wa.me/56990388036" style="align-self: flex-start; margin-top: 8px; background: #1D6E78; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 26px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Escribir por WhatsApp</a>
-</div>
-</div>
-
-<form style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 1px 0 #E6E1D6, 0 24px 60px -30px rgba(18,50,74,0.35)">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 18px">
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #12324A">Nombre
-<input type="text" name="nombre" placeholder="Tu nombre" style="font: inherit; font-weight: 400; font-size: 16px; color: #17262E; border: 1px solid #D9D3C6; border-radius: 12px; padding: 14px 16px; background: #FBFAF7; min-height: 48px; box-sizing: border-box">
-</label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #12324A">Teléfono
-<input type="tel" name="telefono" placeholder="+56 9 …" style="font: inherit; font-weight: 400; font-size: 16px; color: #17262E; border: 1px solid #D9D3C6; border-radius: 12px; padding: 14px 16px; background: #FBFAF7; min-height: 48px; box-sizing: border-box">
-</label>
-</div>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #12324A">Email
-<input type="email" name="email" placeholder="tu@correo.cl" style="font: inherit; font-weight: 400; font-size: 16px; color: #17262E; border: 1px solid #D9D3C6; border-radius: 12px; padding: 14px 16px; background: #FBFAF7; min-height: 48px; box-sizing: border-box">
-</label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #12324A">Parcela de interés
-<select name="parcela" style="font: inherit; font-weight: 400; font-size: 16px; color: #17262E; border: 1px solid #D9D3C6; border-radius: 12px; padding: 14px 16px; background: #FBFAF7; min-height: 48px; box-sizing: border-box">
-<option>Todavía no lo sé</option>
-<option>A20 · bordemar · 8.723 m²</option>
-<option>B4 · borde exterior · 15.051 m²</option>
-<option>B5 · borde exterior · 13.845 m²</option>
-<option>C1 · interior · 10.042 m²</option>
-<option>C2 · interior · 9.856 m²</option>
-<option>C10 · interior · 14.344 m²</option>
-</select>
-</label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #12324A">Mensaje
-<textarea name="mensaje" rows="4" placeholder="Cuéntanos qué buscas o cuándo te gustaría visitar" style="font: inherit; font-weight: 400; font-size: 16px; color: #17262E; border: 1px solid #D9D3C6; border-radius: 12px; padding: 14px 16px; background: #FBFAF7; resize: vertical; box-sizing: border-box"></textarea>
-</label>
-<button type="button" class="bp-btn" style="font: inherit; font-weight: 700; font-size: 16px; background: #12324A; color: #FFFFFF; border: 0; border-radius: 999px; padding: 17px 28px; min-height: 52px; cursor: pointer">Enviar consulta</button>
-</form>
-</section>
-
-<!-- FOOTER -->
-<footer style="background: #58B6C0; color: #12324A">
-<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 40px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
-<img src="img/logo.png" alt="Bahía Peuque, Chiloé" style="height: 88px; width: auto; display: block">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; font-weight: 600">
-<a href="#parcelas" style="color: #12324A; text-decoration: none">Parcelas</a>
-<a href="#ubicacion" style="color: #12324A; text-decoration: none">Ubicación</a>
-<a href="#contacto" style="color: #12324A; text-decoration: none">Contacto</a>
-</div>
-<span style="font-size: 13px">© 2026 Bahía Peuque · Castro, Chiloé · <span style="opacity: .7">V 1.2</span></span>
-</div>
+<footer>
+  <div class="wrap">
+    <img data-img="logo" alt="Bahía Peuque, Chiloé" width="1000" height="640">
+    <nav aria-label="Pie"><a href="#parcelas">Parcelas</a><a href="#ubicacion">Ubicación</a><a href="#contacto">Contacto</a></nav>
+    <small>© 2026 Bahía Peuque · Castro, Chiloé · V 1.2</small>
+  </div>
 </footer>
 
-</div>
 <script>
-/* ============================================================
-   PARCELAS DISPONIBLES  —  edita aquí precios y superficies.
-   Para quitar una parcela vendida, borra su línea.
-   x / y = posición del botón sobre el plano (en %).
-   ============================================================ */
-var PARCELAS = [
-  { id: 'A20', m2: 8723,  uf: 4100, x: 24.7, y: 82.9 },
-  { id: 'B4',  m2: 15051, uf: 4300, x: 47.5, y: 48.5 },
-  { id: 'B5',  m2: 13845, uf: 3800, x: 61.4, y: 58.0 },
-  { id: 'C1',  m2: 10042, uf: 4000, x: 48.7, y: 60.2 },
-  { id: 'C2',  m2: 9856,  uf: 3900, x: 38.6, y: 53.7 },
+var IMGS = {
+  "borde": "img/borde.jpg",
+  "atardecer": "img/atardecer.jpg",
+  "veleros1": "img/veleros1.jpg",
+  "veleros2": "img/veleros2.jpg",
+  "a17": "img/a17.jpg",
+  "a13": "img/a13.jpg",
+  "aerea": "img/aerea.jpg",
+  "bahia": "img/bahia.jpg",
+  "cuidador": "img/cuidador.jpg",
+  "porton": "img/porton.jpg",
+  "boya": "img/boya.jpg",
+  "vistaB1": "img/vistaB1.jpg",
+  "bordemar": "img/bordemar.jpg",
+  "a06": "img/a06.jpg",
+  "mapa": "img/mapa.jpg",
+  "plano": "img/plano.svg",
+  "logo": "img/logo.png"
+};
+document.querySelectorAll('img[data-img]').forEach(function (el) { el.src = IMGS[el.dataset.img]; });
+
+var TIPO = { A: 'Tipo A · Bordemar', B: 'Tipo B · Borde exterior', C: 'Tipo C · Interior' };
+var CORTO = { A: 'parcelas tipo A', B: 'vista desde B1', C: 'vista aérea' };
+var FOTO = { A: 'bordemar', B: 'vistaB1', C: 'bahia' };
+var DESC = {
+  A: 'Parcela bordemar en el sector sur de la península, con frente al mar. Agua potable, electricidad y acceso a playa por el camino interno.',
+  B: 'Parcela de borde exterior y gran superficie, ideal para quien busca espacio y privacidad. Agua potable, electricidad y acceso a playa por el camino interno.',
+  C: 'Parcela interior rodeada de naturaleza, con excelente relación superficie / valor. Agua potable, electricidad y acceso a playa por el camino interno.'
+};
+var DATA = [
+  { id: 'A20', m2: 8723, uf: 4100, x: 24.7, y: 82.9 },
+  { id: 'B4', m2: 15051, uf: 4300, x: 47.5, y: 48.5 },
+  { id: 'B5', m2: 13845, uf: 3800, x: 61.4, y: 58.0 },
+  { id: 'C1', m2: 10042, uf: 4000, x: 48.7, y: 60.2 },
+  { id: 'C2', m2: 9856, uf: 3900, x: 38.6, y: 53.7 },
   { id: 'C10', m2: 14344, uf: 4400, x: 35.4, y: 60.6 }
 ];
+function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+function dec(n, d) { return n.toFixed(d).replace('.', ','); }
+function $(id) { return document.getElementById(id); }
 
-var TIPOS = {
-  A: { nombre: 'Tipo A · Bordemar', img: 'img/tipo-a.jpg', corto: 'parcelas tipo A',
-       desc: 'Parcela bordemar en el sector sur de la península, con frente al mar. Agua potable, electricidad y acceso a playa por el camino interno.' },
-  B: { nombre: 'Tipo B · Borde exterior', img: 'img/vista-b1.jpg', corto: 'vista desde B1',
-       desc: 'Parcela de borde exterior y gran superficie, ideal para quien busca espacio y privacidad. Agua potable, electricidad y acceso a playa por el camino interno.' },
-  C: { nombre: 'Tipo C · Interior', img: 'img/aerea.jpg', corto: 'vista aérea',
-       desc: 'Parcela interior rodeada de naturaleza, con excelente relación superficie / valor. Agua potable, electricidad y acceso a playa por el camino interno.' }
-};
+var stage = $('stage'), cards = $('cards'), pins = {}, btns = {};
+DATA.forEach(function (p) {
+  var pin = document.createElement('button');
+  pin.type = 'button'; pin.className = 'pin'; pin.textContent = p.id;
+  pin.style.left = p.x + '%'; pin.style.top = p.y + '%';
+  pin.setAttribute('aria-label', 'Ver parcela ' + p.id);
+  pin.addEventListener('click', function () { select(p.id); reveal(); });
+  stage.appendChild(pin); pins[p.id] = pin;
 
-(function () {
-  function miles(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
-  function dec(n, d) { return n.toFixed(d).replace('.', ','); }
-  var pins = document.getElementById('pins');
-  var cards = document.getElementById('cards');
-  var sel = PARCELAS.length ? PARCELAS[0].id : null;
+  var c = document.createElement('button');
+  c.type = 'button'; c.className = 'card';
+  c.innerHTML = '<b>' + p.id + '</b><span>' + fmt(p.m2) + ' m²</span><em>UF ' + fmt(p.uf) + '</em>';
+  c.addEventListener('click', function () { select(p.id); reveal(); });
+  cards.appendChild(c); btns[p.id] = c;
+});
 
-  function pinStyle(p, on) {
-    return 'position:absolute;left:' + p.x + '%;top:' + p.y + '%;transform:translate(-50%,-50%);min-width:52px;height:44px;padding:0 12px;border-radius:999px;cursor:pointer;font-family:Manrope,Arial,sans-serif;font-size:15px;font-weight:800;' +
-      (on ? 'background:#E3AE45;color:#12324A;border:3px solid #fff;box-shadow:0 0 0 4px rgba(227,174,69,.35),0 8px 20px rgba(18,50,74,.35);z-index:3;'
-          : 'background:#fff;color:#12324A;border:2px solid #12324A;box-shadow:0 6px 16px rgba(18,50,74,.28);z-index:2;');
-  }
-  function cardStyle(on) {
-    return 'font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px;padding:16px 18px;border-radius:16px;min-height:44px;color:#12324A;' +
-      (on ? 'background:#fff;border:2px solid #12324A;box-shadow:0 10px 24px -14px rgba(18,50,74,.5);' : 'background:#FBFAF7;border:2px solid #E3DED3;');
-  }
-  function pintar() {
-    pins.innerHTML = ''; cards.innerHTML = '';
-    PARCELAS.forEach(function (p) {
-      var on = p.id === sel;
-      var b = document.createElement('button');
-      b.type = 'button'; b.className = 'bp-pin'; b.textContent = p.id;
-      b.setAttribute('aria-label', 'Ver parcela ' + p.id); b.setAttribute('aria-pressed', on);
-      b.style.cssText = pinStyle(p, on);
-      b.onclick = function () { sel = p.id; pintar(); };
-      pins.appendChild(b);
-      var c = document.createElement('button');
-      c.type = 'button'; c.setAttribute('aria-pressed', on); c.style.cssText = cardStyle(on);
-      c.innerHTML = '<span style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:28px;font-weight:600;line-height:1">' + p.id + '</span>' +
-        '<span style="font-size:13px;color:#3C4E57">' + miles(p.m2) + ' m²</span>' +
-        '<span style="font-size:14px;font-weight:700;color:#1D6E78">UF ' + miles(p.uf) + '</span>';
-      c.onclick = function () { sel = p.id; pintar(); };
-      cards.appendChild(c);
-    });
-    var p = PARCELAS.filter(function (q) { return q.id === sel; })[0];
-    if (!p) return;
-    var t = TIPOS[p.id.charAt(0)];
-    var v = { id: p.id, tipo: t.nombre, tipoCorto: t.corto, desc: t.desc,
-      uf: 'UF ' + miles(p.uf), sup: miles(p.m2) + ' m²', ufm2: dec(p.uf / p.m2, 2) + ' UF', ha: dec(p.m2 / 10000, 2) + ' ha' };
-    document.querySelectorAll('[data-f]').forEach(function (el) { el.textContent = v[el.getAttribute('data-f')]; });
-    var img = document.getElementById('sel-img'); img.src = t.img; img.alt = 'Imagen referencial ' + t.corto;
-  }
-  pintar();
-})();
+var mq = window.matchMedia('(max-width: 820px)');
+function reveal() {
+  if (!mq.matches) return;
+  var r = document.querySelector('.detalle').getBoundingClientRect();
+  if (r.top > window.innerHeight * 0.55 || r.bottom < 120) document.querySelector('.detalle').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function select(id) {
+  var p = DATA.filter(function (d) { return d.id === id; })[0], t = id.charAt(0);
+  DATA.forEach(function (d) {
+    var on = d.id === id;
+    pins[d.id].setAttribute('aria-pressed', on ? 'true' : 'false');
+    btns[d.id].setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  $('d-img').src = IMGS[FOTO[t]]; $('d-img').alt = 'Imagen referencial de la parcela ' + id;
+  $('d-corto').textContent = CORTO[t];
+  $('d-tipo').textContent = TIPO[t];
+  $('d-id').textContent = id;
+  $('d-uf').textContent = 'UF ' + fmt(p.uf);
+  $('d-sup').textContent = fmt(p.m2) + ' m²';
+  $('d-ufm2').textContent = dec(p.uf / p.m2, 2) + ' UF';
+  $('d-ha').textContent = dec(p.m2 / 10000, 2) + ' ha';
+  $('d-desc').textContent = DESC[t];
+  $('d-wa').textContent = 'Consultar por la parcela ' + id;
+  $('d-wa').href = 'https://wa.me/56990388036?text=' + encodeURIComponent('Hola, me interesa la parcela ' + id + ' de Bahía Peuque.');
+}
+select('A20');
+
+document.querySelectorAll('button[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var el = $(b.dataset.copy);
+    var done = function () { b.textContent = 'Copiado'; setTimeout(function () { b.textContent = 'Copiar'; }, 1600); };
+    var pick = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(el.textContent.trim()).then(done, pick); } catch (e) { pick(); }
+  });
+});
 </script>
 
 </body>
